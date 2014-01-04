@@ -23,9 +23,11 @@ Strategies to Resolve Borked Merge
 Commands
 ========
 Committing a few things to master:
-`touch foo`
-`git add foo`
-`git commit -m 'Foo!'`
-`touch bar`
-`git add bar`
-`git commit -m 'Bar!'`
+```
+touch foo
+git add foo
+git commit -m 'Foo!'
+touch bar
+git add bar
+git commit -m 'Bar!'
+```
