@@ -19,3 +19,13 @@ Strategies to Resolve Borked Merge
 1. Peel back commits via 'git revert' and re-apply
 2. Revert-revert the merge
 3. Rebase and change branch remote history
+
+Commands
+========
+Committing a few things to master:
+`touch foo`
+`git add foo`
+`git commit -m 'Foo!'`
+`touch bar`
+`git add bar`
+`git commit -m 'Bar!'`
