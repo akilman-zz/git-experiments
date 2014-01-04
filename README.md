@@ -30,10 +30,19 @@ git commit -m 'Foo!'
 touch bar
 git add bar
 git commit -m 'Bar!'
+git push -u origin master
 ```
 
 Create a feature branch:
 ```bash
 git checkout -b feature
 git push -u origin feature
+```
+
+Commit more to master:
+```bash
+touch baz
+git add baz
+git commit -m 'Baz!'
+git push -u origin master
 ```
