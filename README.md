@@ -6,7 +6,7 @@ Using this repository as a playground to understand how to resolve botched merge
 Strategy
 ========
 - Commit a few things to master
-- Create a branch
+- Create a feature branch
 - Commit more to master
 - Commit more to branch
 - Merge master into branch, intentionally sabatoge a conflict
@@ -22,12 +22,18 @@ Strategies to Resolve Borked Merge
 
 Commands
 ========
-Committing a few things to master:
-```
+Commit a few things to master:
+```bash
 touch foo
 git add foo
 git commit -m 'Foo!'
 touch bar
 git add bar
 git commit -m 'Bar!'
+```
+
+Create a feature branch:
+```bash
+git checkout -b feature
+git push -u origin feature
 ```
