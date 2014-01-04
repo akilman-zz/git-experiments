@@ -46,3 +46,10 @@ git add baz
 git commit -m 'Baz!'
 git push -u origin master
 ```
+
+Commit more to feature branch:
+```bash
+echo bazzzzzzz > baz
+git commit -m 'Baz!'
+git push -u origin feature
+```
