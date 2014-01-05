@@ -41,7 +41,7 @@ git push -u origin feature
 
 Commit more to master:
 ```bash
-touch baz
+echo 'This is some other content' > baz
 git add baz
 git commit -m 'Baz!'
 git push -u origin master
@@ -52,4 +52,26 @@ Commit more to feature branch:
 echo bazzzzzzz > baz
 git commit -m 'Baz!'
 git push -u origin feature
+```
+
+Merge master into feature branch and sabatoge:
+```bash
+git merge master
+git mergetool # resolve & botch conflict
+git commit
+```
+
+Commit more to branch:
+```bash
+touch quux
+git add quux
+git commit -m 'Quux!'
+git push -u origin feature
+```
+
+Undo:
+```bash
+git reset --hard $SHA1_of_commit_pre_merge
+git merge $SHA1_of_original_merge_source_on_master
+git cherry-pick $SHA1_of_new_commits_on_old_feature_branch
 ```
