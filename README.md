@@ -68,3 +68,10 @@ git add quux
 git commit -m 'Quux!'
 git push -u origin feature
 ```
+
+Undo:
+```bash
+git reset --hard $SHA1_of_commit_pre_merge
+git merge $SHA1_of_original_merge_source_on_master
+git cherry-pick $SHA1_of_new_commits_on_old_feature_branch
+```
