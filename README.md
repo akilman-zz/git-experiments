@@ -60,3 +60,11 @@ git merge master
 git mergetool # resolve & botch conflict
 git commit
 ```
+
+Commit more to branch:
+```bash
+touch quux
+git add quux
+git commit -m 'Quux!'
+git push -u origin feature
+```
